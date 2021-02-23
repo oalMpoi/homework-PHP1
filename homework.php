@@ -101,6 +101,32 @@ $total = 0;
 
 $users=$_POST["users"];
 $age=$_POST["age"];
+  
+  if (isset($order_Pandesal) && $order_Pandesal == "on") {
+  // User ordered pandesal
+
+  $totalPrice += $pricePandesal;
+}
+  if (isset($order_Bagel) && $order_Bagel == "on") {
+  // User ordered bagel
+
+  $totalPrice += $priceBagel;
+}
+  if (isset($order_GB) && $order_GB == "on") {
+  // User ordered garlic bread
+
+  $totalPrice += $priceGB;
+}
+  if (isset($order_Brownie) && $order_Brownie == "on") {
+  // User ordered brownie
+
+  $totalPrice += $priceBrownie;
+}
+  if (isset($order_Pretzel) && $order_Pretzel == "on") {
+  // User ordered pretzel
+
+  $totalPrice += $pricePretzel;
+}
 
 switch ($users) {
     case ($users <= 20):
