@@ -126,7 +126,6 @@
     switch ($users) {
         case ($users <= 20):
             $overallTotal = $totalPrice * .50;
-            echo "The total you have to pay is $totalPrice";
             break;
         case ($users > 20):
             switch ($age) {
@@ -139,6 +138,8 @@
   
           break;
     }
+    
+    echo "The total you have to pay is $totalPrice";
   }
   ?>
   </form>
