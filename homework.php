@@ -125,7 +125,7 @@
     
     switch ($users) {
         case ($users <= 20):
-            $overallTotal = $totalPrice;
+            $overallTotal = $totalPrice * .50;
             break;
         case ($users > 20):
             switch ($age) {
