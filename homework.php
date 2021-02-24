@@ -139,7 +139,7 @@
           break;
     }
     
-    echo "The total you have to pay is $totalPrice";
+    echo "The total you have to pay is $overallTotal";
   }
   ?>
   </form>
