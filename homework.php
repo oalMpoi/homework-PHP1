@@ -130,10 +130,10 @@
         case ($users > 20):
             switch ($age) {
                 case ($age >= 60):
-                    $overallTotal = $price * .20;
+                    $overallTotal = $totalPrice * .20;
                     break;
                 default:
-                    $overallTotal = $price * .10;         
+                    $overallTotal = $totalPrice * .10;         
             }
   
           break;
