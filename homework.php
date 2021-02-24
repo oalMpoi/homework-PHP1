@@ -125,7 +125,7 @@
     
     switch ($users) {
         case ($users <= 20):
-            $overallTotal = $totalPrice * .50;
+            $overallTotal = $totalPrice;
             break;
         case ($users > 20):
             switch ($age) {
@@ -133,13 +133,12 @@
                     $overallTotal = $price * .20;
                     break;
                 default:
-                    $overallTotal = $price * .10;
+                    $overallTotal = $price * .10;         
             }
   
           break;
     }
-    
-    echo "The total you have to pay is $overallTotal";
+    echo "The total the customer has to pay is $overallTotal"
   }
   ?>
   </form>
